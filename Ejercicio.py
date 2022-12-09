@@ -66,6 +66,12 @@ print(clasificacion)
 print(titulos[tiulos.character == "Bruce Wayne"].count())
 print(elenco[elenco.character == "Bruce Wayne"].count())
 
+# 13. Mostrar cuantos papeles ha hecho "Robert De Niro" a lo largo de su carrera
+print(titulos[titulos.name == "Robert De Niro"].count())
+print(elenco[elenco.name == "Robert De Niro"].count())
+
+
+
 
 
 
