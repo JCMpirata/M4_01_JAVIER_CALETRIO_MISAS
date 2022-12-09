@@ -15,4 +15,9 @@ print("Numero de registros en elenco: ", numero_registros_elenco)
 # 3. Mostrar las 5 películas mas antiguas
 titulos.nsmallest(5, 'year')
 
+# 4. Mostrar numero de peliculas que tienen "Dracula" en el titulo
+titulos[titulos.title.str.contains("Dracula")].count()
+elenco[elenco.title.str.contains("Dracula")].count()
+
+
 
