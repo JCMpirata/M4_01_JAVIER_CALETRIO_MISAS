@@ -77,6 +77,10 @@ print(protagonista_titulos)
 protagonista_elenco = elenco[(elenco.name == "Charlton Heston") & (elenco.n == 1) & (elenco.year >= 1960) & (elenco.year <= 1969)].sort_values(by='year', ascending=False)
 print(protagonista_elenco)
 
+# 15. Mostrar cuantos papeles para actores hubo en la década de los 50's
+print(titulos[(titulos.type == "actor") & (titulos.year >= 1950) & (titulos.year <= 1959)].count())
+print(elenco[(elenco.type == "actor") & (elenco.year >= 1950) & (elenco.year <= 1959)].count())
+
 
 
 
