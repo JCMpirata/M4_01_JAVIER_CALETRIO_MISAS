@@ -35,6 +35,10 @@ print(Exorcist)
 Exorcista = elenco[elenco.title.str.contains("Exorcist")].sort_values(by='year')
 print(Exorcista)
 
+# 8. Mostrar cuantas peliculas fueron hechas en 1950
+print(titulos[titulos.year == 1950].count())
+print(elenco[elenco.year == 1950].count())
+
 
 
 
