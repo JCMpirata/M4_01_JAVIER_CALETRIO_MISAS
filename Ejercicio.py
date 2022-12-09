@@ -81,6 +81,10 @@ print(protagonista_elenco)
 print(titulos[(titulos.type == "actor") & (titulos.year >= 1950) & (titulos.year <= 1959)].count())
 print(elenco[(elenco.type == "actor") & (elenco.year >= 1950) & (elenco.year <= 1959)].count())
 
+# 16. Mostrar cuantos papeles para actrices hubo en la década de los 50's
+print(titulos[(titulos.type == "actress") & (titulos.year >= 1950) & (titulos.year <= 1959)].count())
+print(elenco[(elenco.type == "actress") & (elenco.year >= 1950) & (elenco.year <= 1959)].count())
+
 
 
 
