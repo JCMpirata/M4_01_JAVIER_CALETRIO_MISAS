@@ -70,6 +70,13 @@ print(elenco[elenco.character == "Bruce Wayne"].count())
 print(titulos[titulos.name == "Robert De Niro"].count())
 print(elenco[elenco.name == "Robert De Niro"].count())
 
+# 14. Listado de papeles como protagonista (n=1) que tuvo el actor "Charlton Heston" en la década de los 60's, 
+# ordenado por año de forma descendente
+protagonista_titulos = titulos[(titulos.name == "Charlton Heston") & (titulos.n == 1) & (titulos.year >= 1960) & (titulos.year <= 1969)].sort_values(by='year', ascending=False)
+print(protagonista_titulos)
+protagonista_elenco = elenco[(elenco.name == "Charlton Heston") & (elenco.n == 1) & (elenco.year >= 1960) & (elenco.year <= 1969)].sort_values(by='year', ascending=False)
+print(protagonista_elenco)
+
 
 
 
