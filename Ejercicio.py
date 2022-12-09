@@ -39,6 +39,10 @@ print(Exorcista)
 print(titulos[titulos.year == 1950].count())
 print(elenco[elenco.year == 1950].count())
 
+# 9. Mostrar cuantas peliculas fueron hechas de 1950 a 1959
+print(titulos[(titulos.year >= 1950) & (titulos.year <= 1959)].count())
+print(elenco[(elenco.year >= 1950) & (elenco.year <= 1959)].count())
+
 
 
 
