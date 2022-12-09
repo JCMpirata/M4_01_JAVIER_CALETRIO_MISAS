@@ -62,6 +62,10 @@ print(roles_elenco3)
 clasificacion = elenco[(elenco.title == "Dracula") & (elenco.year == 1958)].sort_values(by='n')
 print(clasificacion)
 
+# 12. Mostrar cuantos papeles de "Bruce Wayne" han sido hechos en la historia de las peliculas
+print(titulos[tiulos.character == "Bruce Wayne"].count())
+print(elenco[elenco.character == "Bruce Wayne"].count())
+
 
 
 
