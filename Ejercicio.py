@@ -19,5 +19,18 @@ titulos.nsmallest(5, 'year')
 titulos[titulos.title.str.contains("Dracula")].count()
 elenco[elenco.title.str.contains("Dracula")].count()
 
+# 5. Mostrar los 10 titulos mas comunes
+titulos.title.value_counts().head(10)
+elenco.title.value_counts().head(10)
+
+# 6. Mostrar cual fue la primera pelicula hecha llamada "Romeo and Juliet"
+Romeo_Julieta = titulos[titulos.title == "Romeo and Juliet"].sort_values(by='year').head(1)
+Romeo_Julieta.nsmallest(1, 'year')
+Romeo_y_Julieta = elenco[elenco.title == "Romeo and Juliet"].sort_values(by='year').head(1)
+Romeo_y_Julieta.nsmallest(1, 'year')
+
+
+
+
 
 
