@@ -43,6 +43,26 @@ print(elenco[elenco.year == 1950].count())
 print(titulos[(titulos.year >= 1950) & (titulos.year <= 1959)].count())
 print(elenco[(elenco.year >= 1950) & (elenco.year <= 1959)].count())
 
+# 10. Mostrar todos los roles que hubo en la pelicula "The Godfather". Tambien mostrar el numero total de coindicencias
+roles_titulos1 = titulos[titulos.title == "The Godfather"]
+print(roles_titulos1)
+roles_titulos2 = roles_titulos1.iloc[:,4]
+print(roles_titulos2)
+roles_titulos3 = roles_titulos2.value_counts()
+print(roles_titulos3)
+
+roles_elenco1 = elenco[elenco.title == "The Godfather"]
+print(roles_elenco1)
+roles_elenco2 = roles_elenco1.iloc[:,3]
+print(roles_elenco2)
+roles_elenco3 = roles_elenco2.value_counts()
+print(roles_elenco3)
+
+# 11. Mostrar el elenco ordenado por la clasificacion "n" de la pelicula "Dracula" de 1958
+clasificacion = elenco[(elenco.title == "Dracula") & (elenco.year == 1958)].sort_values(by='n')
+print(clasificacion)
+
+
 
 
 
